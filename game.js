@@ -38,7 +38,7 @@ const ball = {
 };
 
 const blocks = [];
-const blockColors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F'];
+const blockColors = ['#f0edf3', '#4ECDC4', '#45B7D1', '#ffffff', '#98D8C8', '#6ff798'];
 
 function initBlocks() {
   blocks.length = 0;
@@ -67,9 +67,9 @@ function drawPaddle() {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-  ctx.fillStyle = '#FFE66D';
+  ctx.fillStyle = '#ff6d8d';
   ctx.fill();
-  ctx.strokeStyle = '#FFD43B';
+  ctx.strokeStyle = '#ff3b55';
   ctx.lineWidth = 2;
   ctx.stroke();
   ctx.closePath();
